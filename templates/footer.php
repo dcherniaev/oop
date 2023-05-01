@@ -4,7 +4,7 @@
     <div class="sidebarHeader">Меню</div>
     <ul>
         <li><a href="/">Главная страница</a></li>
-        <li><a href="/about-me">Обо мне</a></li>
+        <li><a href="/hello/user">Страница приветствия</a></li>
     </ul>
 </td>
 </tr>
