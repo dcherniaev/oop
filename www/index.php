@@ -7,8 +7,6 @@ function myAutoLoader(string $className)
 spl_autoload_register('myAutoLoader');
 
 $route = $_GET['route'] ?? '';
-
-$route = $_GET['route'] ?? '';
 $routes = require __DIR__ . '/../src/routes.php';
 
 $isRouteFound = false;
