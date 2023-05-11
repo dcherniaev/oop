@@ -4,6 +4,7 @@ namespace MyProject\Controllers;
 
 use MyProject\Services\Db;
 use MyProject\View\View;
+use MyProject\Models\Articles\Article;
 
 class ArticlesController
 {
@@ -23,7 +24,7 @@ class ArticlesController
     {
         $result = $this->db->query(
             'SELECT * FROM `articles` WHERE id = :id;',
-            [':id' => $articleId]
+            [':id' => $articleId], Article::class
         );
 
         if ($result === []) {
